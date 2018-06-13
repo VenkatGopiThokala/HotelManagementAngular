@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><h2>Hotel Management System</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Heading Row -->
+      <div class="row my-4">
+        <div class="col-lg-8">
+          <img class="img-fluid rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpNPHdUezSeZ8MCROxhJYjml5a_t0_cyRbYRnxYMW4Xtr7Z-F" width="100%" height="100%" alt="">
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+          <div class="form-group" style="text-align: left">
+					<h2>CheckIn availability:</h2>
+					
+					<label for="checkin">CheckIn </label> 
+					<input id="checkin" name="checkin" type="date" class="form-control" />
+					
+					<label	for="checkout">CheckOut </label> 
+					<input id="checkout" name="checkout" type="date" class="form-control" />
+						
+					<label	for="Persons">Persons </label> <br>
+					<select	placeholder="Select number of persons">
+						<option value="0">no of persons</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+          <a class="btn btn-primary btn-lg" href="#">Check!!</a>
+          <nav>
+  <a routerLink="/rooms">Rooms</a>
+
+</nav>
+<router-outlet></router-outlet>
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+
+      <!-- Call to Action Well -->
+      <div class="card text-white bg-secondary my-4 text-center">
+        <div class="card-body">
+          <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+        </div>
+      </div>
+
+      <!-- Content Row -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Deluxe</h2>
+              <img class="img-fluid rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpNPHdUezSeZ8MCROxhJYjml5a_t0_cyRbYRnxYMW4Xtr7Z-F" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Premium</h2>
+               <img class="img-fluid rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpNPHdUezSeZ8MCROxhJYjml5a_t0_cyRbYRnxYMW4Xtr7Z-F" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Luxury</h2>
+               <img class="img-fluid rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpNPHdUezSeZ8MCROxhJYjml5a_t0_cyRbYRnxYMW4Xtr7Z-F" width="100%" height="100%" alt="">
+            </div>
+            <div class="card-footer">
+              <a href='./app/rooms/rooms.component.html' class="btn btn-primary">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!-- /.col-md-4 -->
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+  </body>
+
+</html>
